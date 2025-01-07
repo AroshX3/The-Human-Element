@@ -1,0 +1,85 @@
+*{margin: 0; padding: 0;}
+body{
+    background: rgb(255, 255, 255);
+}
+.TheStart{
+    margin-top: 15.5px;
+    width: 100%;
+    height: 205px;
+    background: rgb(158, 0, 0);
+    border-top: 2px solid rgb(235, 1, 1);
+    border-bottom: 2px solid rgb(235, 1, 1);
+}
+.para001{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    font-size: 2.9em;
+    color: rgb(190, 190, 190);
+    display: inline-block;
+    
+     
+}.ThePoint{
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 2.9em;
+display: inline-block;
+
+}.para002{
+
+    font-family: arial;
+    padding: 20px;
+    color: gray;
+    
+    font-weight: bold;
+    font-size: 30px;
+    
+    
+}
+.Thecreation{
+    background-color: rgb(110, 25, 25);
+    width: 100%;
+    
+}
+#Givethe{
+    padding: 12px;
+    width: 250px;
+    margin-left: 507px;
+    display: block;
+    
+}
+#link002{
+    margin-left: 473px ;
+    color: #ddd;
+    
+;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footerdiv{
+    width: 100%;
+    height: 40px;
+    background: rgba(68, 0, 0, 0.514);
+    border-top: 2px solid rgb(235, 1, 1);
+    border-bottom: 2px solid rgb(235, 1, 1);
+    background: rgb(121, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+.footer001{
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+}

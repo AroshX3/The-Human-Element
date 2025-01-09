@@ -67,4 +67,35 @@
   <h1>Right-Click Disabled</h1>
   <p>Try right-clicking on this page.</p>
 </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <button onclick="checkAnswer()">Start Quiz</button>
+
+    <script>
+        function checkAnswer() {
+            const userAnswer = prompt("What is the smallest planet in our solar system?").trim().toLowerCase();
+            const correctAnswer = "mercury";
+
+            if (userAnswer === correctAnswer) {
+                window.location.href = "file:///C:/Users/user/Documents/HTML,CSS/The%20Human%20Element%20(THE)/Exp.1/Levels/level2.html"; // Replace with your desired URL
+            } else {
+                alert("Incorrect! Try again.");
+            }
+        }
+    </script>
+</body>
 </html>

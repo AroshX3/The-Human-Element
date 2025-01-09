@@ -11,43 +11,88 @@
     <title>The Human Element (Exp.1)</title>
 </head>
 <body>
-    <div id="TheFullkind">
-<div class="TheStart">
-            
-            <abbr title="(THE) The Human Element"><p class="para001">The Human Element</p></abbr>
-            <abbr title="The First Version"><p class="ThePoint">1</p></abbr>
-        <p class="para002">The Error of life</p>
-       </div>
-
-        <div class="Thecreation">
-            <button id="Givethe">Click here</button>
-            <a id="link001" href="#"></a>
-        </div>
-<div class=""></div>
-        </nav><br><br><br>
-        <div class="footerdiv">
-        <footer class="footer001"> &copy; By- Dreams, All reverved by- The Human Element 1 </footer>
+  <div id="TheFullkind">
+    <div class="TheStart">
+      <abbr title="(THE) The Human Element">
+        <p class="para001">The Human Element</p>
+      </abbr>
+      <abbr title="The First Version">
+        <p class="ThePoint">1</p>
+      </abbr>
+      <p class="para002">The Game of Interrogate</p>
     </div>
-    </div>
-    
-
-<script>
-    document.getElementById("Givethe").addEventListener('click', () => {
-    const code = prompt("Enter Your Life Code");
-    if( code === "#"){
-      alert("Correct Code!"); 
-    } else{
-        alert("Incorrect Code. Try Again");
-    }
-  });
   
-</script>
+    <div class="Thecreation">
+      <button id="Givethe">Answer Code</button>
+    </div>
+  
+    <div class="TheConver"><br>
+      <div class="Div001 div01">
+        <p class="para006">Question</p>  
+        <p class="para007">What is the smallest planet in our solar system?</p>
+        <img class="img002" src="Img/solarsystem.jpg" alt="img">
+        <p class="para008">Write your answer in the "Answer Code"<br> It's our solar system by the way, if you don't know.</p>
+      </div>
+  
+      <div class="About001">
+        <h2 class="head002 head02">About</h2>
+        <h2 class="head002">What the Flip is this?</h2>
+        <p class="para003">Hello There, hope you are well. You are probably thinking, "What the flip is this stupid website," right? Anyway, let me teach you what it is. It's a simple game of Interrogate, where you have Questions to answer. Write you answer in "Answer Code" (AC), and if it's correct, it will take you to the next level. Simple right? So what are you waiting for? Go ahead and have fun. And remember, "Inspect Element is not allowed."</p>
+  
+        <p class="para003 p03">And Oh,  every level will get harder than the last. If you are a true gamer like me (even though I'm the dev), you will pass with ease. If not... well, go touch some grass.</p>
+  
+        <h1 class="head001">Massive Thanks To...</h1>
+        <img class="img001" src="Img/7c6ef749d665f4e90cfc93c92f458636.webp" alt="img">
+        <p class="para004"> Rafsan <br> (Girl version name: Qt Pie)</p>
+  
+        <h2 class="head002">About Rafsan</h2>
+        <p class="para005">He is a great guy who helps me a lot on such projects. Very rich... girls notice him immediately. Very handsome, but he was too shy to show his face. Anyway, he helped me build this web. So thanks to him.</p>
+      </div>
 
+    <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-
-
-
-    
-</body>
-</html>
+    <div class="footerdiv">
+      <footer class="footer001"> &copy; By Dreams, All rights reserved by The Human Element 1</footer>
+    </div>
+  </div>
+  
+  <script>
+    alert("Enouncement!! The Site is not finish. Its still working on, so if any buggs found, pls dont jugde. Be patient. Thank you! ")
+    document.getElementById("Givethe").addEventListener('click', () => {
+      const code = prompt("What is the smallest planet in our solar system?").trim().toLowerCase();
+      if (code === "mercury") { // Corrected case-sensitivity
+        alert("Correct Code!");
+        window.location.href = "Levels/level2.html"; // Ensure level2.html exists in the same directory
+      } else {
+        alert("Incorrect Code. Try Again");
+      }
+    });
+  </script>
+  
+  <script>
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+      alert('Nice Try. Right clicking is disabled');
+    });
+  </script>
+  
+  <script>
+    document.addEventListener('keydown', function(event) {
+      // Block F12
+      if (event.key === "F12") {
+        event.preventDefault();
+        alert("I said Inspect Element is disabled!");
+      }
+      // Block Ctrl+Shift+I and Ctrl+Shift+C
+      if (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'C')) {
+        event.preventDefault();
+        alert("Bro give up already. It's disabled.");
+      }
+      // Block Ctrl+U (View Source)
+      if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault();
+        alert("View Source is disabled!");
+      }
+    });
+  </script>
+  

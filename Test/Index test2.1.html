@@ -6,6 +6,87 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Hi there</h2>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2.css">
+    <link rel="shortcut icon" href="Img/The Human Element Exp.1 (Icon).png">
+    <link rel="icon" href="img/The Human Element Exp.1 (Icon).png">
+    <title>The Human Element (Exp.1)</title>
+</head>
+<body>
+  <div id="TheFullkind">
+    <div class="TheStart">
+      <abbr title="(THE) The Human Element">
+        <p class="para001">The Human Element</p>
+      </abbr>
+      <abbr title="The First Version">
+        <p class="ThePoint">1</p>
+      </abbr>
+      <p class="para002">The Game of Interrogate</p>
+    </div>
+  
+    <div class="Thecreation">
+      <button id="Givethe">Answer Code</button>
+    </div>
+  
+    <div class="TheConver">
+      <div class="Div001 div01">
+        <p class="para006">Question</p>  
+        <p class="para007">What is the smallest planet in our solar system?</p>
+        <img class="img002" src="Img/solarsystem.jpg" alt="Solar System">
+        <p class="para008">Write your answer in the "Answer Code".<br> It's our solar system, by the way, if you don't know.</p>
+      </div>
+  
+      <div class="About001">
+        <h2 class="head002 head02">About</h2>
+        <h2 class="head002">What the Flip is this?</h2>
+        <p class="para003">Hello There! This is a simple game of Interrogate. Answer the questions in the "Answer Code" (AC). If correct, you move to the next level. Have fun!</p>
+        <p class="para003 p03">Every level gets harder. True gamers will pass with ease. If not, go touch some grass. 😏</p>
+  
+        <h1 class="head001">Massive Thanks To...</h1>
+        <img class="img001" src="Img/7c6ef749d665f4e90cfc93c92f458636.webp" alt="Rafsan">
+        <p class="para004"> Rafsan <br> (Girl version name: Qt Pie)</p>
+  
+        <h2 class="head002">About Rafsan</h2>
+        <p class="para005">He's a great guy, very rich, and handsome. Thanks to him for helping with this project!</p>
+      </div>
+    </div>
+
+    <div class="footerdiv">
+      <footer class="footer001"> &copy; By Dreams, All rights reserved by The Human Element 1</footer>
+    </div>
+  </div>
+  
+  <script>
+    alert("Announcement!! This site is still under development. Please be patient if you find bugs. Thank you!");
+
+    document.getElementById("Givethe").addEventListener('click', () => {
+      const code = prompt("What is the smallest planet in our solar system?").trim().toLowerCase();
+      if (code === "mercury") {
+        alert("Correct Code!");
+        window.location.href = "Levels/level2.html";
+      } else {
+        alert("Incorrect Code. Try Again");
+      }
+    });
+
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+      alert('Nice Try. Right clicking is disabled');
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "F12" || (event.ctrlKey && (event.shiftKey || event.key === 'u'))) {
+        event.preventDefault();
+        alert("Inspect Element is disabled!");
+      }
+    });
+  </script>
+</body>
+</html>
+
 </body>
 </html>

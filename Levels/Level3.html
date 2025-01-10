@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="level2.css">
+    <link rel="stylesheet" href="level3.css">
 
     <link rel="shortcut icon" href="Img/The Human Element Exp.1 (Icon).png">
     <link rel="Icon" href="img/The Human Element Exp.1 (Icon).png">
-    <title>Level 2</title>
+    <title>Level 3</title>
 </head>
 <body>
     <div class="TheConver">
         <div class="Thecreation">
+            
             <button id="Givethe">Answer Code</button>
           </div>
         <div class="Div001 div01">
           <p class="para006">Question</p>  
-          <p class="para007">What is the Second Element of the Periodic Table?</p>
-          <img class="img002" src="Img/question mark.jpg" alt="Solar System">
-          <p class="para008">Write your answer in the "Answer Code".<br> Here is a hint: its "He2" now write full form</p>
+          <p class="para007">What is the capital of France?</p>
+          <img class="img002" src="Img/OIP.jpg" alt="Solar System">
+          <p class="para008">Write your answer in the "Answer Code".<br> You know where is Eiffel Tower located?</p>
         </div>
     
       
@@ -26,17 +27,17 @@
 
 
 
+
 <script>
             document.getElementById("Givethe").addEventListener('click', () => {
               const code = prompt("Answer The Question, Given.").trim().toLowerCase();
-              if (code === "helium") { // Use all lowercase to match the processed input
+              if (code === "paris") { // Use all lowercase to match the processed input
                 alert("Correct Code!");
-                window.location.href = "Level3.html"; // Make sure Level3.html exists and is correctly linked
+                window.location.href = "Level4.html"; // Make sure Level3.html exists and is correctly linked
               } else {
                 alert("Incorrect Code. Try Again");
               }
             });
-
 
 
 

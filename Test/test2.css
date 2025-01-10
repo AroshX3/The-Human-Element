@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+#TheFullkind {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header Section */
+.TheStart {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.TheStart p {
+    margin: 10px 0;
+}
+
+.para001 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ThePoint {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.para002 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Buttons */
+.Thecreation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button#Givethe {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#Givethe:hover {
+    background-color: #0056b3;
+}
+
+/* Question Section */
+.TheConver {
+    margin: 20px 0;
+}
+
+.Div001 {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.img002 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* About Section */
+.About001 {
+    margin: 20px 0;
+}
+
+.head002 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.para003, .para005 {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footerdiv {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer.footer001 {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .TheStart .para001 {
+        font-size: 1.5rem;
+    }
+
+    .TheStart .ThePoint, .TheStart .para002 {
+        font-size: 1rem;
+    }
+
+    .img001, .img002 {
+        width: 100%;
+        height: auto;
+    }
+
+    button#Givethe {
+        font-size: 0.9rem;
+    }
+
+    .footer001 {
+        font-size: 0.8rem;
+    }
+}

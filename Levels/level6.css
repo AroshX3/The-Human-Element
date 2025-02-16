@@ -1,0 +1,126 @@
+*{margin: 0; padding: 0;}
+body{
+    background: #ddd;
+}
+.TheConver{
+    margin-top: 250px;
+}
+.Div001 {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.Div001 {
+    
+    width: 100%;
+    max-width: 800px; /* Optional: Limit maximum size */
+    margin: 0 auto; /* Center the container */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.img002{
+  width: 200px;
+  height: 200px;
+}.img002 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+.para006{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: orange;
+    font-size: 20px;
+}.para007{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}.para008{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Givethe {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3e9bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block; /* Ensure it behaves like a block element */
+    margin: 10px auto; /* Center the button horizontally */
+}#Givethe:hover {
+    background-color: #015bba;
+}
+@media (max-width: 768px) {
+    .TheStart .para001 {
+        font-size: 1.5rem;
+    }
+
+    .TheStart .ThePoint, .TheStart .para002 {
+        font-size: 1rem;
+    }
+
+    .img001, .img002 {
+        width: 100%;
+        height: auto;
+    }
+    .img001, .img002 {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .img001, .img002 {
+        max-width: 100%;
+        height: auto;
+        display: block; /* Ensures no inline spacing */
+    }
+    .img001, .img002 {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    button#Givethe {
+        font-size: 0.9rem;
+    }
+
+    .footer001 {
+        font-size: 0.8rem;
+    }
+    @media (max-width: 768px) {
+        #Givethe {
+            font-size: 19px; /* Adjust font size for smaller screens */
+            width: 90%; /* Optional: Make the button fill most of the container width */
+        }
+    
+}
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .Thecreation button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .para006 {
+        font-size: 30px;
+    }
+
+    .para007 {
+        font-size: 40px;
+    }
+
+    .para008 {
+        font-size: 20px;
+    }
+}
+}

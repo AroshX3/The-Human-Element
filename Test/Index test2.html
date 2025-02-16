@@ -3,99 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code-based Redirect</title>
-  <script>
-    // Mapping of codes to URLs
-    const codesToLinks = {
-      '123': 'https://www.example.com',
-      '456': 'https://www.google.com',
-      '789': 'file:///C:/Users/user/Documents/HTML,CSS/The%20Human%20Element%20(THE)/Exp.1/Test/Index%20test2.1.html'
-    };
-
-    // Prompt the user for a code
-    const userInput = prompt("Enter the code to teleport to a website (e.g., 123, 456, 789):");
-
-    // Check if the input matches a valid code
-    if (codesToLinks[userInput]) {
-      // Redirect to the corresponding URL
-      window.location.href = codesToLinks[userInput];
-    } else {
-      // Notify the user of an invalid code
-      alert("Invalid code! Please try again.");
+  <title>Click to Earn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
     }
-  </script>
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #money-display {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the Code-based Redirect Example</h1>
-  <p>Enter a code in the prompt to navigate to another website.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disable Right-Click</title>
+  <h1>Click the Button to Earn Money</h1>
+  <div id="money-display">$0</div>
+  <button id="earn-button">Earn Money</button>
+
   <script>
-    document.addEventListener('contextmenu', function(event) {
-      event.preventDefault();
-      alert('Right-click is disabled on this page.');
+    let money = 0;
+    let level = 1;
+    let earningsPerClick = 100;
+
+    const moneyDisplay = document.getElementById('money-display');
+    const earnButton = document.getElementById('earn-button');
+
+    earnButton.addEventListener('click', () => {
+      money += earningsPerClick;
+      if (money >= 1000 && level === 1) {
+        level = 2;
+        earningsPerClick = 200;
+        alert('Level Up! Now you earn $200 per click.');
+      }
+      moneyDisplay.textContent = `$${money}`;
     });
   </script>
-  <script>
-    document.addEventListener('keydown', function(event) {
-      // Block F12
-      if (event.key === "F12") {
-        event.preventDefault();
-        alert("Inspect Element is disabled!");
-      }
-      // Block Ctrl+Shift+I and Ctrl+Shift+C
-      if (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'C')) {
-        event.preventDefault();
-        alert("Inspect Element is disabled!");
-      }
-      // Block Ctrl+U (View Source)
-      if (event.ctrlKey && event.key === 'u') {
-        event.preventDefault();
-        alert("View Source is disabled!");
-      }
-    });
-  </script>
-  
-</head>
-<body>
-  <h1>Right-Click Disabled</h1>
-  <p>Try right-clicking on this page.</p>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Quiz</h1>
-    <button onclick="checkAnswer()">Start Quiz</button>
-
-    <script>
-        function checkAnswer() {
-            const userAnswer = prompt("What is the smallest planet in our solar system?").trim().toLowerCase();
-            const correctAnswer = "mercury";
-
-            if (userAnswer === correctAnswer) {
-                window.location.href = "file:///C:/Users/user/Documents/HTML,CSS/The%20Human%20Element%20(THE)/Exp.1/Levels/level2.html"; // Replace with your desired URL
-            } else {
-                alert("Incorrect! Try again.");
-            }
-        }
-    </script>
 </body>
 </html>

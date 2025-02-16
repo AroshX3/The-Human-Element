@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="level9.css">
+    <link rel="shortcut icon" href="Img/The Human Element Exp.1 (Icon).png">
+    <title>Level 9</title>
+</head>
+<body>
+
+    <div class="TheConver">
+        <div class="Thecreation">
+            <button id="Givethe">Answer Code</button>
+        </div>
+        <div class="Div001 div01">
+            <p class="para006">Question</p>  
+            <p class="para007">What is the only even prime number?</p>
+            <br>
+            <p class="para008">Write your answer in the "Answer Code".<br> It’s hard, but easy to answer.</p>
+        </div>
+    </div>
+
+    <!-- Special Popup -->
+   <!-- Special Transition Popup -->
+<div id="specialPopup" class="popup-container">
+    <div class="popup">
+        <h1>One More Aspect</h1>
+    </div>
+</div>
+
+
+    <script>
+      document.getElementById("Givethe").addEventListener('click', () => {
+    const code = prompt("Answer The Question, Given.").trim().toLowerCase();
+    if (code === "two") {
+        const popup = document.getElementById("specialPopup");
+        popup.style.display = "flex";
+        setTimeout(() => {
+            popup.classList.add("show"); // Start animation
+        }, 100); 
+        
+        setTimeout(() => {
+            window.location.href = "level10.html";
+        }, 2500); // Delay before moving to Level 10
+    } else {
+        alert("Incorrect Code. Try Again");
+    }
+});
+
+
+        // Disable Inspect Element & Right Click
+        document.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            alert('Nice Try. Right-click is disabled!');
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (
+                event.key === "F12" || 
+                (event.ctrlKey && event.shiftKey && ['J', 'C'].includes(event.key)) || 
+                (event.ctrlKey && event.key === 'U')
+            ) {
+                event.preventDefault();
+                alert("Inspect Element is disabled!");
+            }
+        });
+    </script>
+
+</body>
+</html>
